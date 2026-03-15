@@ -26,12 +26,3 @@ jobs:
         cache: 'npm'
     - run: npm i
     - run: npm run cypress:open
-
-    - name: Deploy 🚀
-      if: always()
-      uses: JamesIves/github-pages-deploy-action@4.1.5
-      with:
-        branch: gh-pages
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        folder: allure-report
