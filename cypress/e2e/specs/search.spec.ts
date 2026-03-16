@@ -7,7 +7,7 @@ describe('Test Case 1,2,3', () => {
   })
 
   it('Should test search functionality', () => {
-    PlaylistPage.fillSearchInput(Cypress.env('track_name'))
+    PlaylistPage.fillSearchInput('winter')
     PlaylistPage.winterTrack.should('be.visible');
     PlaylistPage.summerTrack.should('not.exist');
     PlaylistPage.autumnTrack.should('not.exist');
