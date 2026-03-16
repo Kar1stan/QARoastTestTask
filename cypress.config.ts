@@ -10,8 +10,7 @@ export default defineConfig({
     },
     env: {
       allureReuseAfterSpec: true,
-      track_name: process.env.TRACK_NAME,
-      url: process.env.URL
+      track_name: 'winter',
     },
     baseUrl: 'https://vite-react-alpha-lemon.vercel.app/',
     specPattern: '**/*.spec.{js,jsx,ts,tsx}',
