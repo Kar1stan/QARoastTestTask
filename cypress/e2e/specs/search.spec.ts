@@ -8,7 +8,6 @@ describe('Test Case 1,2,3', () => {
 
   it('Should test search functionality', () => {
     PlaylistPage.fillSearchInput(cy.env('track_name'))
-    // Guess cy.env() still not working properly 
     PlaylistPage.winterTrack.should('be.visible');
     PlaylistPage.summerTrack.should('not.exist');
     PlaylistPage.autumnTrack.should('not.exist');
