@@ -16,5 +16,6 @@ export default defineConfig({
     baseUrl: 'https://vite-react-alpha-lemon.vercel.app/',
     specPattern: '**/*.spec.{js,jsx,ts,tsx}',
     chromeWebSecurity: false,
+    allowCypressEnv: false 
   },
 });
